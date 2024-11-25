@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FavThingView: View {
+struct FavThingDetailView: View {
     
     // MARK: Stored properties
     
@@ -32,6 +32,6 @@ struct FavThingView: View {
 
 #Preview {
     NavigationStack {
-        FavThingView(thingToShow: ryder)
+        FavThingDetailView(thingToShow: ryder)
     }
 }
