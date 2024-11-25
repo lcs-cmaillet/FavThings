@@ -19,6 +19,10 @@ struct FavThingView: View {
     // Shows the user interface (what people see)
     var body: some View {
         ScrollView {
+            Image(thingToShow.image)
+                .resizable()
+                .scaledToFit()
+            
             Text(thingToShow.description)
         }
         .navigationTitle(thingToShow.name)
@@ -28,6 +32,6 @@ struct FavThingView: View {
 
 #Preview {
     NavigationStack {
-        FavThingView(thingToShow: dad)
+        FavThingView(thingToShow: ryder)
     }
 }
