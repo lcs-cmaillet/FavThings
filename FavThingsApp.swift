@@ -11,7 +11,7 @@ import SwiftUI
 struct FavThingsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FavThingView(thingToShow: dad)
         }
     }
 }
