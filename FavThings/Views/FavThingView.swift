@@ -18,13 +18,16 @@ struct FavThingView: View {
     
     // Shows the user interface (what people see)
     var body: some View {
-        VStack {
+        ScrollView {
             Text(thingToShow.description)
         }
+        .navigationTitle(thingToShow.name)
         .padding()
     }
 }
 
 #Preview {
-    FavThingView(thingToShow: mom)
+    NavigationStack {
+        FavThingView(thingToShow: dad)
+    }
 }
